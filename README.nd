@@ -1,0 +1,42 @@
+## Rock Paper Scissors Game clone
+
+
+## A simple rock paper scissors game clone which anyone can play and the result and the score will be stored to build this game clone I used HTML, CSS(bootstrap framework) and JavaScript.
+
+## Table of Content
+
+- [Features]-(#features)
+- [Usage]-(#usage)
+- [Contributing]-(#contributing)
+- [Refference]-(#refference)
+- [Licence]-(#license)
+
+## Features
+
+- Play Rock Paper Scissors against the computer.
+- Responsive design using Bootstrap.
+- Simple and intuitive interface with font awesome icons.
+- Score tracking for user and computer.
+- Display Results and score with icons too.
+
+
+---
+
+#### **5. Usage**
+
+## Usage
+
+1. Open the game in your browser.
+2. Click on one of the buttons (Rock, Paper, or Scissors).
+3. The result will be displayed, and scores will update accordingly.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to [Bootstrap](https://getbootstrap.com/) for the responsive design framework.
+- Icons provided by [Font Awesome](https://fontawesome.com/).
+- Sololearn [https://www.sololearn.com/] for interactive learning platform
+- Mr Simon Bao [SuperSimpledev](https://www.youtube.com/@SuperSimpleDev)
