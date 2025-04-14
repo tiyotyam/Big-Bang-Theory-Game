@@ -18,46 +18,46 @@
       <div class="col-12 col-md-8 col-lg-6">
         <h2 class="text-center m-3 text-white">Choose you weapon</h2>
         <div class="text-center">
-          <button class="btn bg-none text-white text-center btn-lg mb-1" onclick="playGame('rock')" title="Rock">
+          <button class="btn bg-dark m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('rock')" title="Rock">
             <i class="fas fa-hand-rock fa-2x">
             </i> Rock
           </button>
-          <button class="btn bg-none text-white text-center btn-lg mb-1" onclick="playGame('paper')" title="Paper">
+          <button class="btn bg-dark m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('paper')" title="Paper">
             <i class="fas fa-hand-paper fa-2x">
             </i> Rock
           </button>
-          <button class="btn bg-none text-white text-center btn-lg mb-1" onclick="playGame('scissors')" title="Scissors">
+          <button class="btn bg-dark m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('scissors')" title="Scissors">
             <i class="fas fa-hand-scissors fa-2x">
             </i> Rock
           </button>
         </div>
       </div>
-      <button class="btn text-white text-center btn-lg mt-5 bg-danger" onclick="
+      <button class="btn text-white text-center mt-5 bg-secondary" onclick="
           score.wins = 0;
           score.losses = 0;
           score.ties = 0;
           localStorage.removeItem('score');">
-        <i class="fas fa-arrows-rotate fa-lg">
+        <i class="fas fa-arrows-rotate fa-lg fa-2x">
         </i> Reset
       </button>
     </div>
 
     <div class="row">
-      <div class="col-12 col-md-8 col-lg-6 text-center">
+      <div class="col-12 col-md-8 col-lg-6">
         <h3 class="mb-5">Results: </h3>
         <div>
-          <p class="text-white">Your : <span id="you"></span></p>
-          <p class="text-white">Computer : <span id="comp"></span></p>
-          <p class="text-white">Result : <span id="result"></span></p>
+          <p class="text-white fs-2">Your : <span id="you"></span></p>
+          <p class="text-white fs-2">Computer : <span id="comp"></span></p>
+          <p class="text-white fs-2">Result : <span id="result"></span></p>
         </div>
       </div>
 
       <div class="col-12 col-md-8 col-lg-6 text-center">
         <h3 class="mb-5">You got: </h3>
-        <div>
-          <p class="text-white">wins</p>
-          <p class="text-white">ties</p>
-          <p class="text-white">losses</p>
+        <div class="d-flex flex-column justify-content-start">
+          <p class="text-white"><span class="text-white js-wins"></span> Wins </p>
+          <p class="text-white"><span class="text-white js-ties"></span> Ties </p>
+          <p class="text-white"><span class="text-white js-losses"></span> Losses </p>
         </div>
       </div>
     </div>
@@ -112,7 +112,7 @@
     </div>
 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script/briem.js"></script>
+    <script src="script/app.js"></script>
 </body>
 </html>
 

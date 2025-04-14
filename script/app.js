@@ -63,22 +63,25 @@ function playGame(playerMove) {
     document.querySelector('#comp').innerHTML = computerChoice;
     document.querySelector('#result').innerHTML = resultIcon;
 
-    //displaying the result in the popup
-    alert(` you played ${playerMove} and the computer played ${move}. Result: ${result} \n wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties} `);
-
+    // //displaying the result in the popup
+    // alert(` you played ${playerMove} and the computer played ${move}. Result: ${result} \n wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties} `);
+    
+    document.querySelector('.js-wins').innerHTML = score.wins;
+    document.querySelector('.js-losses').innerHTML = score.losses;
+    document.querySelector('.js-ties').innerHTML = score.ties;
 
 }
 function getMove(move){
-  return `<i class="fas fa-hand-${move} fa" style="color: gold"></i>`;
+  return `<i class="fa-lg fas fa-hand-${move} fa" style="color: gold"></i>`;
 }
 
 function getWutet(result){
   if (result === 'you win'){
-    return `<i class="fas fa-crown" style="color: gold"></i>`;
+    return `<i class="fas fa-crown fa-lg" style="color: gold"></i>`;
   }else if (result === 'you lose'){
-    return `<i class="fas fa-frown" style="color: black"></i>`;
+    return `<i class="fas fa-frown fa-lg" style="color: black"></i>`;
   }else if (result === 'tie'){
-    return `<i class="fas fa-handshake" style="color: rgb(116, 77, 26)"></i>`;
+    return `<i class="fas fa-handshake fa-lg" style="color: rgb(116, 77, 26)"></i>`;
   }
 }
     
