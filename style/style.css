@@ -1,5 +1,14 @@
-#you{
-  padding: 3rem;
-  background-color: red;
-  
+.btn:hover{
+  background: linear-gradient(55deg, grey, gray, grey);
+  color: rgba(97, 56, 2, 0.945) !important;
+  transition: .3s ease-in-out;
+}
+i:hover{
+color: rgba(97, 56, 2, 0.945);
+transition: .3s ease-in-out;
+}
+
+.btn:active{
+  background: linear-gradient(55deg, grey, gray, grey);
+  transition: .3s ease-in-out;
 }
