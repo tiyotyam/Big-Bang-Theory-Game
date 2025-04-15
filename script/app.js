@@ -3,6 +3,8 @@ let score = JSON.parse(localStorage.getItem('score'))||{
     losses: 0,
     ties: 0
   };
+    updateScore();
+
 
   /*this is the optional way to use like the above's or operator.
   if(!score){ 
@@ -89,6 +91,9 @@ function playGame(playerMove) {
     }
 
     localStorage.setItem('score', JSON.stringify(score));
+
+    updateScore();
+    
     //store the icons in the variable
     const playerChoice = getMove(playerMove);
     const computerChoice = getMove(move);
@@ -100,7 +105,7 @@ function playGame(playerMove) {
     document.querySelector('#result').innerHTML = resultIcon;
 
     // //displaying the result in the popup
-    // alert(` you played ${playerMove} and the computer played ${move}. Result: ${result} \n wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties} `);
+    /*alert(` you played ${playerMove} and the computer played ${move}. Result: ${result} \n wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties} `);*/
     
     document.querySelector('.js-wins').innerHTML = score.wins;
     document.querySelector('.js-losses').innerHTML = score.losses;
@@ -121,7 +126,10 @@ function getWutet(result){
   }
 }
     
-
+function updateScore(){
+    document.querySelector('.js_score')
+    .innerHTML = `wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`;
+}
 function pickComputerMove() {
     const num = Math.random();
     let move = '';
@@ -138,5 +146,11 @@ function pickComputerMove() {
     }
     return move;
 }
-
+function resetScore(){
+    score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+      localStorage.removeItem('score');
+      updateScore();
+}
 

@@ -1,16 +1,13 @@
-.btn:hover{
+
+.btn:hover:hover{
   background: linear-gradient(55deg, grey, gray, grey);
-  color: rgba(97, 56, 2, 0.945) !important;
+  color: rgba(126, 72, 1, 0.945) !important;
   transition: .2s ease-in-out;
 }
 
 i:hover{
-color: rgba(97, 56, 2, 0.945);
+color: rgba(126, 71, 1, 0.945);
 transition: .2s ease-in-out;
 }
 
-.btn:active{
-  background: linear-gradient(55deg, grey, gray, grey);
-  transition: .2s ease-in-out;
-}
 

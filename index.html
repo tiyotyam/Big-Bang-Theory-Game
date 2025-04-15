@@ -11,46 +11,47 @@
 </head>
 <body>
 
-  <div class="container mt-5 bg-secondary p-5 rounded-2">
+  <div class="container bg-secondary text-center p-5">
     <h1 class="text-center mb-4">Rock Paper Scissors</h1>
-    <div class="row justify-content-center bg-dark p-5 rounded-2">
+    <div class="row justify-content-center p-5 rounded-2">
       <!-- Player Choice Buttons -->
       <div class="col-12 col-md-8 col-lg-6">
         <h2 class="text-center m-3 text-white">Choose you weapon</h2>
         <div class="d-flex align-items-md-center justify-content-center flex-wrap">
-          <button class="btn bg-dark fs-2 m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('rock')" title="Rock">
+          <button class="btn fs-2 m-2 rounded-circle p-3" style="color: gold;" onclick="playGame('rock')" title="Rock">
             <i class="fas fa-hand-rock fa-2x">
             </i>
           </button>
-          <button class="btn bg-dark fs-2 m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('paper')" title="Paper">
+          <button class="btn fs-2 m-2 rounded-circle p-3" style="color: gold;" onclick="playGame('paper')" title="Paper">
             <i class="fas fa-hand-paper fa-2x">
             </i>
           </button>
-          <button class="btn bg-dark fs-2 m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('scissors')" title="Scissors">
+          <button class="btn fs-2 m-2 rounded-circle p-3" style="color: gold;" onclick="playGame('scissors')" title="Scissors">
             <i class="fas fa-hand-scissors fa-2x">
             </i>
           </button>
-          <button class="btn bg-dark fs-2 m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('lizard')" title="Lizard">
+          <button class="btn fs-2 m-2 rounded-circle p-3" style="color: gold;" onclick="playGame('lizard')" title="Lizard">
             <i class="fas fa-hand-lizard fa-2x">
             </i>
           </button>
-          <button class="btn bg-dark fs-2 m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('spock')" title="Spock">
+          <button class="btn fs-2 m-2 rounded-circle p-3" style="color: gold;" onclick="playGame('spock')" title="Spock">
             <i class="fas fa-hand-spock fa-2x">
             </i>
           </button>
+
+
         </div>
       </div>
-      <button class="btn text-white fs-3 text-center mt-5 bg-secondary btn-md" style="width: 61%;" onclick="
-          score.wins = 0;
-          score.losses = 0;
-          score.ties = 0;
-          localStorage.removeItem('score');">
+      <p class="js_score text-white text-center"></p>
+    </div>
+    <button class="btn px-5 text-center text-white fs-3 mt-5 bg-danger" 
+    onclick="resetScore();">
         <i class="fas fa-arrows-rotate fa-lg">
         </i>
-      </button>
-    </div>
+    </button>
+  </div>
 
-    <div class="row ">
+    <!-- <div class="row ">
       <div class="col-12 col-md-8 col-lg-6">
         <h3 class="mb-5">Results: </h3>
         <div>
@@ -59,7 +60,6 @@
           <p class="text-white fs-2">Result : <span id="result"></span></p>
         </div>
       </div>
-
       <div class="col-12 col-md-8 col-lg-6">
         <h3 class="mb-5">You got: </h3>
         <div class="">
@@ -68,10 +68,11 @@
           <p class="text-white"><span class="text-white js-losses"></span> Losses </p>
         </div>
       </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script/app.js"></script>
+    </div> -->
+    
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script/app.js"></script>
 </body>
 </html>
 
