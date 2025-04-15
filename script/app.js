@@ -24,6 +24,10 @@ function playGame(playerMove) {
             result = 'you lose';
         }else if (move === 'scissors'){
             result = 'you win';
+        }else if (move === 'lizard'){
+            result = 'you win';
+        }else if (move === 'spock'){
+            result = 'you lose';
         }
     }else if (playerMove === 'paper') {
         if(move === 'rock'){
@@ -32,6 +36,10 @@ function playGame(playerMove) {
             result = 'tie';
         }else if (move === 'scissors'){
             result = 'you lose';
+        }else if (move === 'lizard'){
+            result = 'you lose';
+        }else if (move === 'spock'){
+            result = 'you win';
         }
     }else if (playerMove === 'scissors') {
         if(move === 'rock'){
@@ -39,6 +47,34 @@ function playGame(playerMove) {
         }else if (move === 'paper'){
             result = 'you win';
         }else if (move === 'scissors'){
+            result = 'tie';
+        }else if (move === 'lizard'){
+            result = 'you win';
+        }else if (move === 'spock'){
+            result = 'you lose';
+        }
+    }else if (playerMove === 'lizard') {
+        if(move === 'rock'){
+            result = 'you lose';
+        }else if (move === 'paper'){
+            result = 'you win';
+        }else if (move === 'scissors'){
+            result = 'you lose';
+        }else if (move === 'lizard'){
+            result = 'tie';
+        }else if (move === 'spock'){
+            result = 'you win';
+        }
+    }else if (playerMove === 'spock') {
+        if(move === 'rock'){
+            result = 'you win';
+        }else if (move === 'paper'){
+            result = 'you lose';
+        }else if (move === 'scissors'){
+            result = 'you win';
+        }else if (move === 'lizard'){
+            result = 'you lose';
+        }else if (move === 'spock'){
             result = 'tie';
         }
     }
@@ -89,12 +125,16 @@ function getWutet(result){
 function pickComputerMove() {
     const num = Math.random();
     let move = '';
-    if(num>=0 && num<1/3) {
+    if(num>=0 && num<0.2) {
         move = 'rock';
-    }else if (num>=1/3 && num<2/3) {
+    }else if (num>=0.2 && num<0.4) {
         move = 'paper';
-    }else if (num>= 2/3 && num<1) {
+    }else if (num>=0.4 && num<0.6) {
         move = 'scissors';
+    }else if (num>=0.6 && num<0.8) {
+        move = 'lizard';
+    }else if (num>=0.8 && num<1) {
+        move = 'spock';
     }
     return move;
 }

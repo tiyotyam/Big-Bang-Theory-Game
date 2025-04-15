@@ -17,28 +17,36 @@
       <!-- Player Choice Buttons -->
       <div class="col-12 col-md-8 col-lg-6">
         <h2 class="text-center m-3 text-white">Choose you weapon</h2>
-        <div class="text-center">
-          <button class="btn bg-dark m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('rock')" title="Rock">
+        <div class="d-flex align-items-md-center justify-content-center flex-wrap">
+          <button class="btn bg-dark fs-2 m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('rock')" title="Rock">
             <i class="fas fa-hand-rock fa-2x">
-            </i> Rock
+            </i>
           </button>
-          <button class="btn bg-dark m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('paper')" title="Paper">
+          <button class="btn bg-dark fs-2 m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('paper')" title="Paper">
             <i class="fas fa-hand-paper fa-2x">
-            </i> Rock
+            </i>
           </button>
-          <button class="btn bg-dark m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('scissors')" title="Scissors">
+          <button class="btn bg-dark fs-2 m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('scissors')" title="Scissors">
             <i class="fas fa-hand-scissors fa-2x">
-            </i> Rock
+            </i>
+          </button>
+          <button class="btn bg-dark fs-2 m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('lizard')" title="Lizard">
+            <i class="fas fa-hand-lizard fa-2x">
+            </i>
+          </button>
+          <button class="btn bg-dark fs-2 m-2 rounded-circle border border-white p-3" style="color: gold;" onclick="playGame('spock')" title="Spock">
+            <i class="fas fa-hand-spock fa-2x">
+            </i>
           </button>
         </div>
       </div>
-      <button class="btn text-white text-center mt-5 bg-secondary btn-md" style="width: 61%;" onclick="
+      <button class="btn text-white fs-3 text-center mt-5 bg-secondary btn-md" style="width: 61%;" onclick="
           score.wins = 0;
           score.losses = 0;
           score.ties = 0;
           localStorage.removeItem('score');">
-        <i class="fas fa-arrows-rotate fa-lg fa-2x">
-        </i> Reset
+        <i class="fas fa-arrows-rotate fa-lg">
+        </i>
       </button>
     </div>
 
@@ -46,18 +54,18 @@
       <div class="col-12 col-md-8 col-lg-6">
         <h3 class="mb-5">Results: </h3>
         <div>
-          <p class="text-white fs-2 px-5">Your : <span id="you"></span></p>
-          <p class="text-white fs-2 px-5">Computer : <span id="comp"></span></p>
-          <p class="text-white fs-2 px-5">Result : <span id="result"></span></p>
+          <p class="text-white fs-2">You pick : <span id="you"></span></p>
+          <p class="text-white fs-2">Computer : <span id="comp"></span></p>
+          <p class="text-white fs-2">Result : <span id="result"></span></p>
         </div>
       </div>
 
-      <div class="col-12 col-md-8 col-lg-6 text-center">
+      <div class="col-12 col-md-8 col-lg-6">
         <h3 class="mb-5">You got: </h3>
-        <div class="d-flex flex-column justify-content-center">
-          <p class="text-white px-5"><span class="text-white js-wins px-5"></span> Wins </p>
-          <p class="text-white px-5"><span class="text-white js-ties px-5"></span> Ties </p>
-          <p class="text-white"><span class="text-white js-losses px-5"></span> Losses </p>
+        <div class="">
+          <p class="text-white"><span class="text-white js-wins"></span> Wins </p>
+          <p class="text-white"><span class="text-white js-ties"></span> Ties </p>
+          <p class="text-white"><span class="text-white js-losses"></span> Losses </p>
         </div>
       </div>
     </div>
