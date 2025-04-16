@@ -11,39 +11,43 @@
 </head>
 <body>
 
-  <div class="container bg-secondary mt-5 p-5">
+  <div class="container bg-secondary mt-5 p-5 text-center">
     <h1 class="text-center mb-4">Rock Paper Scissors</h1>
-    <div class="row justify-content-center rounded-2 shadow p-5">
+    <div class="">
       <!-- Player Choice Buttons -->
       <h2 class="text-center m-3 text-primary">Choose you weapon
       </h2>
-      <div class="d-flex flex-wrap bg-secondary p-4 justify-content-center text-center rounded">
+      <div class="bg-secondary shadow text-center mb-4 rounded-circle">
 
-        <i class="bg-none fas fa-hand-rock fa-4x m-4 text-center" style="color: gold;" onclick="playGame('rock')" title="rock">
+        <i class="bg-none spock fas fa-hand-rock fa-4x text-center" style="color: gold;" onclick="playGame('rock')" title="rock">
         </i>
-        <i class="bg-none fas fa-hand-paper fa-4x m-4" style="color: gold;" onclick="playGame('paper')" title="paper">
+        <i class="bg-none spock fas fa-hand-paper fa-4x m-4" style="color: gold;" onclick="playGame('paper')" title="paper">
         </i>
-        <i class="bg-none fas fa-hand-scissors fa-4x m-4" style="color: gold;" onclick="playGame('scissors')" title="scissors">
+        <i class="bg-none spock fas fa-hand-scissors fa-4x m-4" style="color: gold;" onclick="playGame('scissors')" title="scissors">
         </i>
-        <i class="bg-none fas fa-hand-lizard fa-4x m-4" style="color: gold;" onclick="playGame('lizard')" title="lizard">
+        <i class="bg-none spock fas fa-hand-lizard fa-4x m-4" style="color: gold;" onclick="playGame('lizard')" title="lizard">
         </i>
-        <i class="bg-none fas fa-hand-spock fa-4x m-4" style="color: gold;" onclick="playGame('spock')" title="spock">
+        <i class="bg-none spock fas fa-hand-spock fa-4x m-4" style="color: gold;" onclick="playGame('spock')" title="spock">
         </i>
       </div>
 <!---->
-      <div class="d-flex justify-content-evenly">
-        
-        <p class="fas fa-user text-primary fs-2"><span id="you"></span></p>
-        <p class="fas fa-computer text-primary fs-2"><span id="comp"></span></p>
-        <p class="fas fa-result text-primary fs-2"><span id="result"></span></p>
-      </div>
-
-      <p class="js_score text-primary text-center"></p>
-
-
       
+      <div class="bg-secondary shadow">
+        <div class="bg-secondary d-flex justify-content-center">
+          <p class="p-4 fs-2">you <span id="you" class="js_you"></span></p>
+          <p class="p-4 fs-2"><span id="computer" class="js_computer"></span> computer </p>
+      </div>
+
+      <div class="bg-secondary d-flex justify-content-evenly">
+        <p class="result p-4 fs-2">Result<span id=""></span></p>
+        <p class="p-4 fs-2"><span id="result"></span></p>
+      </div>
+      </div>
+
+      <p class="js_score fs-2 text-white text-center"></p>
+
 <!---->
-      <button class="btn text-center text-white fs-3 mt-5 btn-secondary" 
+      <button class="btn text-center btn_reset text-white fs-3 mt-5 btn-secondary" 
           onclick="resetScore();">
         <i class="fas fa-arrows-rotate fa-lg">
         </i>

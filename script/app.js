@@ -4,7 +4,7 @@ let score = JSON.parse(localStorage.getItem('score'))||{
     ties: 0
   };
     updateScore();
-
+    resetGame();
 
   /*this is the optional way to use like the above's or operator.
   if(!score){ 
@@ -93,6 +93,7 @@ function playGame(playerMove) {
     localStorage.setItem('score', JSON.stringify(score));
 
     updateScore();
+    resetGame();
     
     //store the icons in the variable
     const playerChoice = getMove(playerMove);
@@ -100,8 +101,8 @@ function playGame(playerMove) {
     const resultIcon = getResult(result);
 
     //manipulate the HTML using dom
-    document.querySelector('#you').innerHTML = playerChoice;
-    document.querySelector('#comp').innerHTML = computerChoice;
+    document.querySelector('.js_you').innerHTML = playerChoice;
+    document.querySelector('.js_computer').innerHTML = computerChoice;
     document.querySelector('#result').innerHTML = resultIcon;
 
     // //displaying the result in the popup
@@ -118,17 +119,18 @@ function getMove(move){
 
 function getResult(result){
   if (result === 'you win'){
-    return `<i class="fas fa-crown fa-lg" style="color: gold"></i>`;
+    return `<i class="fas fa-crown fa-lg" style="color: gold"></i> you win `;
   }else if (result === 'you lose'){
-    return `<i class="fas fa-frown fa-lg" style="color: black"></i>`;
+    return `<i class="fas fa-frown fa-lg" style="color: black"></i> you lose `;
   }else if (result === 'tie'){
-    return `<i class="fas fa-handshake fa-lg" style="color: rgb(116, 77, 26)"></i>`;
+    return `<i class="fas fa-handshake fa-lg" style="color: rgb(116, 77, 26)"></i> It's tie `;
   }
 }
     
 function updateScore(){
     document.querySelector('.js_score')
     .innerHTML = `wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`;
+    
 }
 
 function pickComputerMove() {
@@ -153,5 +155,14 @@ function resetScore(){
       score.ties = 0;
       localStorage.removeItem('score');
       updateScore();
+      resetGame();
 }
 
+
+function resetGame() {
+  document.querySelector('.js_you').innerHTML = '';
+  document.querySelector('.js_computer').innerHTML = '';
+  
+  // Clear result icon/message
+  document.querySelector('#result').innerHTML = '';
+}
