@@ -6,49 +6,38 @@
     <title>Rock Paper Scissors game clone</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
 </head>
 <body>
 
-  <div class="container bg-secondary text-center p-5">
+  <div class="container bg-secondary mt-5 p-5">
     <h1 class="text-center mb-4">Rock Paper Scissors</h1>
-    <div class="row justify-content-center p-5 rounded-2">
+    <div class="row justify-content-center bg-white rounded-2 shadow p-5">
       <!-- Player Choice Buttons -->
-      <div class="col-12 col-md-8 col-lg-6">
-        <h2 class="text-center m-3 text-white">Choose you weapon</h2>
-        <div class="d-flex align-items-md-center justify-content-center flex-wrap">
-          <button class="btn fs-2 m-2 rounded-circle p-3" style="color: gold;" onclick="playGame('rock')" title="Rock">
-            <i class="fas fa-hand-rock fa-2x">
-            </i>
-          </button>
-          <button class="btn fs-2 m-2 rounded-circle p-3" style="color: gold;" onclick="playGame('paper')" title="Paper">
-            <i class="fas fa-hand-paper fa-2x">
-            </i>
-          </button>
-          <button class="btn fs-2 m-2 rounded-circle p-3" style="color: gold;" onclick="playGame('scissors')" title="Scissors">
-            <i class="fas fa-hand-scissors fa-2x">
-            </i>
-          </button>
-          <button class="btn fs-2 m-2 rounded-circle p-3" style="color: gold;" onclick="playGame('lizard')" title="Lizard">
-            <i class="fas fa-hand-lizard fa-2x">
-            </i>
-          </button>
-          <button class="btn fs-2 m-2 rounded-circle p-3" style="color: gold;" onclick="playGame('spock')" title="Spock">
-            <i class="fas fa-hand-spock fa-2x">
-            </i>
-          </button>
+      <h2 class="text-center m-3 text-primary">Choose you weapon
+      </h2>
+      <div class="d-flex flex-wrap bg-secondary p-4 justify-content-center text-center rounded">
 
-
-        </div>
+        <i class="bg-none fas fa-hand-rock fa-4x m-4 text-center" style="color: gold;" onclick="playGame('rock')" title="rock">
+        </i>
+        <i class="bg-none fas fa-hand-paper fa-4x m-4" style="color: gold;" onclick="playGame('paper')" title="paper">
+        </i>
+        <i class="bg-none fas fa-hand-scissors fa-4x m-4" style="color: gold;" onclick="playGame('scissors')" title="scissors">
+        </i>
+        <i class="bg-none fas fa-hand-lizard fa-4x m-4" style="color: gold;" onclick="playGame('lizard')" title="lizard">
+        </i>
+        <i class="bg-none fas fa-hand-spock fa-4x m-4" style="color: gold;" onclick="playGame('spock')" title="spock">
+        </i>
       </div>
-      <p class="js_score text-white text-center"></p>
-    </div>
-    <button class="btn px-5 text-center text-white fs-3 mt-5 bg-danger" 
-    onclick="resetScore();">
+      <p class="js_score text-primary text-center"></p>
+      <p class="js_result text-primary text-center"></p>
+      <button class="btn text-center text-white fs-3 mt-5 btn-secondary" 
+          onclick="resetScore();">
         <i class="fas fa-arrows-rotate fa-lg">
         </i>
-    </button>
+      </button>
+    </div>
   </div>
 
     <!-- <div class="row ">
