@@ -97,7 +97,7 @@ function playGame(playerMove) {
     //store the icons in the variable
     const playerChoice = getMove(playerMove);
     const computerChoice = getMove(move);
-    const resultIcon = getWutet(result);
+    const resultIcon = getResult(result);
 
     //manipulate the HTML using dom
     document.querySelector('#you').innerHTML = playerChoice;
@@ -116,7 +116,7 @@ function getMove(move){
   return `<i class="fa-lg fas fa-hand-${move} fa" style="color: gold"></i>`;
 }
 
-function getWutet(result){
+function getResult(result){
   if (result === 'you win'){
     return `<i class="fas fa-crown fa-lg" style="color: gold"></i>`;
   }else if (result === 'you lose'){
@@ -130,6 +130,7 @@ function updateScore(){
     document.querySelector('.js_score')
     .innerHTML = `wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`;
 }
+
 function pickComputerMove() {
     const num = Math.random();
     let move = '';

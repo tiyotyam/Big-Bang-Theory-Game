@@ -13,7 +13,7 @@
 
   <div class="container bg-secondary mt-5 p-5">
     <h1 class="text-center mb-4">Rock Paper Scissors</h1>
-    <div class="row justify-content-center bg-white rounded-2 shadow p-5">
+    <div class="row justify-content-center rounded-2 shadow p-5">
       <!-- Player Choice Buttons -->
       <h2 class="text-center m-3 text-primary">Choose you weapon
       </h2>
@@ -30,8 +30,19 @@
         <i class="bg-none fas fa-hand-spock fa-4x m-4" style="color: gold;" onclick="playGame('spock')" title="spock">
         </i>
       </div>
+<!---->
+      <div class="d-flex justify-content-evenly">
+        
+        <p class="fas fa-user text-primary fs-2"><span id="you"></span></p>
+        <p class="fas fa-computer text-primary fs-2"><span id="comp"></span></p>
+        <p class="fas fa-result text-primary fs-2"><span id="result"></span></p>
+      </div>
+
       <p class="js_score text-primary text-center"></p>
-      <p class="js_result text-primary text-center"></p>
+
+
+      
+<!---->
       <button class="btn text-center text-white fs-3 mt-5 btn-secondary" 
           onclick="resetScore();">
         <i class="fas fa-arrows-rotate fa-lg">
