@@ -4,7 +4,7 @@ let score = JSON.parse(localStorage.getItem('score'))||{
     ties: 0
   };
     updateScore();
-    resetGame();
+
 
   /*this is the optional way to use like the above's or operator.
   if(!score){ 
@@ -93,7 +93,6 @@ function playGame(playerMove) {
     localStorage.setItem('score', JSON.stringify(score));
 
     updateScore();
-    resetGame();
     
     //store the icons in the variable
     const playerChoice = getMove(playerMove);
@@ -131,6 +130,9 @@ function updateScore(){
     document.querySelector('.js_score')
     .innerHTML = `wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`;
     
+document.querySelector('.js_you').innerHTML = '';
+document.querySelector('.js_computer').innerHTML = '';
+document.querySelector('#result').innerHTML = '';
 }
 
 function pickComputerMove() {
@@ -155,8 +157,7 @@ function resetScore(){
       score.ties = 0;
       localStorage.removeItem('score');
       updateScore();
-      resetGame();
-}
+      }
 
 
 function resetGame() {
