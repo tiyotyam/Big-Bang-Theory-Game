@@ -10,10 +10,11 @@
     
 </head>
 <body>
-
   <div class="container bg-secondary mt-5 p-5 text-center">
-    <h1 class="text-center mb-4">Rock Paper Scissors</h1>
-    <div class="">
+    <header>
+      <h1 class="text-center mb-4">Rock Paper Scissors</h1>
+    </header>
+    <main class="bgofgame">
       <!-- Player Choice Buttons -->
       <h2 class="text-center m-3 text-white">Choose you weapon
       </h2>
@@ -45,36 +46,15 @@
       </div>
 
       <p class="js_score fs-2 text-white text-center"></p>
-
-<!---->
+    </main>
+    <footer>
       <button class="btn text-center btn_reset text-white fs-3 mt-5 btn-secondary" 
           onclick="resetScore();">
         <i class="fas fa-arrows-rotate fa-lg">
         </i>
       </button>
-    </div>
+    </footer>
   </div>
-
-    <!-- <div class="row ">
-      <div class="col-12 col-md-8 col-lg-6">
-        <h3 class="mb-5">Results: </h3>
-        <div>
-          <p class="text-white fs-2">You pick : <span id="you"></span></p>
-          <p class="text-white fs-2">Computer : <span id="comp"></span></p>
-          <p class="text-white fs-2">Result : <span id="result"></span></p>
-        </div>
-      </div>
-      <div class="col-12 col-md-8 col-lg-6">
-        <h3 class="mb-5">You got: </h3>
-        <div class="">
-          <p class="text-white"><span class="text-white js-wins"></span> Wins </p>
-          <p class="text-white"><span class="text-white js-ties"></span> Ties </p>
-          <p class="text-white"><span class="text-white js-losses"></span> Losses </p>
-        </div>
-      </div>
-    </div> -->
-    
-  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="script/app.js"></script>
 </body>

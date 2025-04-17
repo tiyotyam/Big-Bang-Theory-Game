@@ -1,5 +1,8 @@
+.bgofgame{
+  background-color: #7a8491;
+}
 .game_con{
-    text-shadow: 7=3px 3px 9px #222, -3px -3px 9px #1f899c !important;
+    text-shadow: 3px 3px 9px #222, -3px -3px 9px #2e8d9e !important;
 }
 .btn:hover{
   color: rgba(126, 72, 1, 0.945) !important;
