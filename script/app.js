@@ -113,7 +113,7 @@ function playGame(playerMove) {
 
 }
 function getMove(move){
-  return `<i class="fa-lg fas fa-hand-${move} fa" style="color: gold"></i>`;
+  return `<i class="fa-lg fas fa-af fa-hand-${move} fa" style="color: gold"></i>`;
 }
 
 function getResult(result){
@@ -130,9 +130,9 @@ function updateScore(){
     document.querySelector('.js_score')
     .innerHTML = `wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`;
     
-document.querySelector('.js_you').innerHTML = '';
-document.querySelector('.js_computer').innerHTML = '';
-document.querySelector('#result').innerHTML = '';
+    document.querySelector('.js_you').innerHTML = '';
+    document.querySelector('.js_computer').innerHTML = '';
+    document.querySelector('#result').innerHTML = '';
 }
 
 function pickComputerMove() {
@@ -158,12 +158,3 @@ function resetScore(){
       localStorage.removeItem('score');
       updateScore();
       }
-
-
-function resetGame() {
-  document.querySelector('.js_you').innerHTML = '';
-  document.querySelector('.js_computer').innerHTML = '';
-  
-  // Clear result icon/message
-  document.querySelector('#result').innerHTML = '';
-}
