@@ -11,16 +11,16 @@
 </head>
 <body>
   
-  <div class="container bg-secondary mt-5 p-5 text-center">
+  <div class="container-lg bg-secondary mt-5 p-5 text-center">
     <header>
       <i class="fas fa-atom fa-2x spinning-icon"></i>
       <h1 class="text-center mb-4">Big Bang Theory Game</h1>
     </header>
-    <main class="bgofgame">
+    <main class="bgofgame p-5">
       <!-- Player Choice Buttons -->
       <h2 class="text-center m-3 text-white">Choose you weapon
       </h2>
-      <div class="bg-dark game_con shadow text-center mb-4 rounded-circle">
+      <div class="bg-dark game_con shadow text-center m-5 rounded-circle">
 
         <i class="bg-none spock fas fa-hand-rock fa-4x text-center" style="color: gold;" onclick="playGame('rock')" title="rock">
         </i>
@@ -36,13 +36,13 @@
       </div>
 <!---->
       
-      <div class="bg-secondary shadow">
-        <div class="bg-secondary d-flex justify-content-center">
+      <div class="shadow d-flex justify-content-between flex-column flex-md-row p-5">
+        <div class="d-flex justify-content-between" style="width: 41%;">
           <p class="p-4 fs-2">you <span id="you" class="js_you"></span></p>
           <p class="p-4 fs-2"><span id="computer" class="js_computer"></span> computer </p>
       </div>
 
-      <div class="bg-secondary d-flex justify-content-evenly">
+      <div class="d-flex justify-content-between" style="width: 41%;">
         <p class="result p-4 fs-2">Result<span id=""></span></p>
         <p class="p-4 fs-2"><span id="result"></span></p>
       </div>

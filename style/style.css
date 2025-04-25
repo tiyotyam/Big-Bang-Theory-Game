@@ -23,8 +23,3 @@ text-shadow: 2px 2px 7px #222, -1px -1px 2px #1f899c;
   width: 61%;
     background-color: #595b5c !important;
 }
-
-.fa-af{
-  transform: rotate(45deg);
-  transition: transform 0.3s ease;
-}

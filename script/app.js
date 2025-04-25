@@ -118,11 +118,11 @@ function getMove(move){
 
 function getResult(result){
   if (result === 'you win'){
-    return `<i class="fas fa-crown fa-lg" style="color: gold"></i> you win `;
+    return `<i class="fas fa-crown fa-lg" style="color: gold"></i> `;
   }else if (result === 'you lose'){
-    return `<i class="fas fa-frown fa-lg" style="color: black"></i> you lose `;
+    return `<i class="fas fa-frown fa-lg" style="color: black;"></i> `;
   }else if (result === 'tie'){
-    return `<i class="fas fa-handshake fa-lg" style="color: rgb(116, 77, 26)"></i> It's tie `;
+    return `<i class="fas fa-handshake fa-lg" style="color: rgb(116, 77, 26)"></i> `;
   }
 }
     
