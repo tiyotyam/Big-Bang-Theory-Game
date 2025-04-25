@@ -13,7 +13,7 @@
 
 ## Features
 
-- Play Rock Paper Scissors against the computer.
+- Play Big Bang Theory game against the computer.
 - Responsive design using Bootstrap.
 - Simple and intuitive interface with font awesome icons.
 - Score tracking for user and computer.
@@ -29,9 +29,3 @@
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- Thanks to [Bootstrap](https://getbootstrap.com/) for the responsive design framework.
-- Icons provided by [Font Awesome](https://fontawesome.com/).
-- Sololearn [https://www.sololearn.com/] for interactive learning platform
-- Mr Simon Bao [SuperSimpledev](https://www.youtube.com/@SuperSimpleDev)
